@@ -1,0 +1,22 @@
+h1{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    border: 10px black solid;
+    border-bottom-style: inset;
+}
+.box {
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    /*border-start-end-radius: 90px;*/
+    /*border-end-end-radius: 90px;*/
+    /*border-bottom-left-radius: 90px;*/
+    /*border-top-left-radius: 90px;*/
+    border-bottom-style: dotted;
+    background-color: rebeccapurple;
+    transform: rotate(0.3turn);
+}
+
+
