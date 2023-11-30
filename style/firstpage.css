@@ -1,0 +1,67 @@
+html {
+    font-family: sans-serif;
+}
+
+
+
+h1{
+    text-align: center;
+    padding: 10px;
+
+}
+@media screen {
+
+
+    .start{
+        border-bottom: 1px black groove;
+        border-width: medium;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px black;
+    }
+}
+
+.block{
+    display: inline;
+
+    margin: 200px;
+    padding: 18px;
+}
+
+.block.acc{
+    text-align: center;
+}
+
+
+
+a:link{
+    color:blue;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.button {
+    margin-top: 50px;
+    position: absolute;
+    padding: 3px;
+    width: 8%;
+    background-color: #eeeeee;
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    border-radius: 10px;
+    border-width: 2px;
+}
+.button:active{
+    background: white;
+    box-shadow: inset 1px 1px 1px black;
+}
+
+
+

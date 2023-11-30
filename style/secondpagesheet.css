@@ -1,0 +1,30 @@
+h1{
+    color: red;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px black;
+    border-bottom-style: groove;
+    box-shadow: 5px 5px 5px olivedrab;
+}
+
+.ing{
+    text-shadow: 1px 1px 1px grey;
+}
+
+.buttonsec {
+    padding: 1px;
+    width: 10%;
+    background-color: #eeeeee;
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    border-radius: 10px;
+    border-width: 2px;
+}
+.buttonsec:active{
+    background: white;
+    box-shadow: inset 1px 1px 1px black;
+}
+
+
