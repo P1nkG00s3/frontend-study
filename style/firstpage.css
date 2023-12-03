@@ -6,33 +6,43 @@ html {
 
 h1{
     text-align: center;
-    padding: 10px;
-
+    margin: 30px;
 }
 @media screen {
 
 
     .start{
+        display: flex;
+        justify-content: space-around;
+        text-align-all: center;
+        border-top: 1px grey groove;
+        border-width: thick;
+        box-shadow:inset 1px 1px 1px grey;
         border-bottom: 1px black groove;
         border-width: medium;
         border-radius: 10px;
-        box-shadow: 10px 10px 10px black;
+        box-shadow: 5px 5px 5px #2c2b2b;
+
     }
 }
 
 .block{
-    display: inline;
-
-    margin: 200px;
-    padding: 18px;
-}
-
-.block.acc{
     text-align: center;
+    margin-top: 43px;
 }
 
+.inf{
+    text-decoration: none;
+    color:blue;
+}
 
+.inf:visited{
+    color:rebeccapurple;
+}
 
+.inf:hover{
+    color: red;
+}
 a:link{
     color:blue;
 }
@@ -40,28 +50,76 @@ a:link{
 a:visited{
     color: red;
 }
-
 a:hover{
     text-decoration: none;
 }
 
 .button {
-    margin-top: 50px;
-    position: absolute;
-    padding: 3px;
-    width: 8%;
+    padding: 3px 50px 3px 15px;
+    width: 20%;
     background-color: #eeeeee;
     color: black;
     cursor: pointer;
     transition-duration: 0.4s;
-    overflow: hidden;
     border-radius: 10px;
     border-width: 2px;
 }
+
+.button:hover{
+     background: #bbbbbb;
+ }
 .button:active{
     background: white;
     box-shadow: inset 1px 1px 1px black;
 }
+
+
+
+
+.img{
+    display: inline;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.imgchild{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.receipt {
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: Arial;
+    top:-100px;
+    right:37%;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease;
+    transition: .5s ease;
+}
+
+.imgchild:hover{
+    filter: blur(5px);
+}
+
+.img:hover .receipt{
+    transform: translatex(10px);
+    text-align: center;
+    opacity: 1;
+}
+
+
+
+
+
 
 
 
