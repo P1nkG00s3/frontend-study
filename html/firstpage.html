@@ -5,27 +5,30 @@
     <title>Receipt</title>
     <link rel="stylesheet" href="/style/firstpage.css">
     <link rel="stylesheet" href="/style/table%20style.css">
+    <link rel="stylesheet" href="/style/menu_button.css">
+    <link rel="stylesheet" href=/style/header.css>
     <link rel="icon" href="/images/1054109.png" type="image/x-icon" />
 </head>
 <body>
-<div class="start">
-    <h1>Мои рецепты</h1>
-    <span class="block">Меню</span>
-    <span class="block">Аккаунт</span>
-    <span class="block inf"><a class = "inf"href="information.html">Информация</a></span>
-</div>
-<table>
-    <tr>
-        <td><div class = "img">
-                <a href="secondpage.html"><img src="/images/Humus.jpg" class="imgchild"><span class="receipt">Хумус</span></a>
+    <script src="/scripts/menu_button.js"></script>
+    <div class="start">
+        <span class="my_receipt"><p>Мои рецепты</p></span>
+        <button class="slide"><div class = "special_menu">
+            <img class="menu_img" id="img_1" src="/images/icon%20menu.png" onclick="cgh(this.id)">
+        </div></button>
+    </div>
+    <table>
+        <tr>
+            <td><div class = "img">
+                    <a href="secondpage.html"><img src="/images/Humus.jpg" class="imgchild"><span class="receipt">Хумус</span></a>
+                </div>
+            </td>
+            <td><div class = "img">
+                <a href = "potato.html"><img src="/images/potato.jpg" class="imgchild"><span class="receipt">Пюре</span></a>
             </div>
-        </td>
-        <td><div class = "img">
-            <a href = "potato.html"><img src="/images/potato.jpg" class="imgchild"><span class="receipt">Пюре</span></a>
-        </div>
 
-        </td>
-    </tr>
-</table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

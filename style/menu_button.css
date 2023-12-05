@@ -1,0 +1,29 @@
+.special_menu  > *{
+    cursor: pointer;
+    display: block;
+    align-content: center;
+    padding: .5px 9px 1px 1px;
+    margin: 8px 0px 8px 8px;
+    position: relative;
+    transition: 0.2s;
+}
+
+
+.slide {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.special_menu:not(.quadro, .slide){
+    transform: translateX(-40px);
+    cursor: pointer;
+}
+
+.menu_img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+

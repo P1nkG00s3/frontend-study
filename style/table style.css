@@ -33,34 +33,11 @@ caption {
     padding: 10px;
 }
 
-a:link{
-    color:blue;
-}
 
-a:visited{
-    color: red;
-}
-
-a:hover{
-    text-decoration: none;
-}
 .outer {
     border: 2px solid black;
 }
 
-.box {
-    padding: 1px;
-    width: calc(100% - 40px);
-    background-color: rebeccapurple;
-    color: white;
-}
-button{
-    padding: 1px;
-    width: calc(100% - 40px);
-    background-color: lightgreen;
-    color: black;
 
-    border-radius: 5px;
-}
 
 
