@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Receipt</title>
     <link rel="stylesheet" href="/style/firstpage.css">
     <link rel="stylesheet" href="/style/table%20style.css">
@@ -10,13 +11,21 @@
     <link rel="icon" href="/images/1054109.png" type="image/x-icon" />
 </head>
 <body>
+
     <script src="/scripts/menu_button.js"></script>
+
     <div class="start">
         <span class="my_receipt"><p>Мои рецепты</p></span>
-        <button class="slide"><div class = "special_menu">
-            <img class="menu_img" id="img_1" src="/images/icon%20menu.png" onclick="cgh(this.id)">
-        </div></button>
+        <div class = "special_menu"><button class="slide">
+            <img class="menu_img" id="img_1" src="/images/icon%20menu.png" onclick="cgh(this.id)"></button>
+            <div id="nav-list" class="nav-list">
+            <p><a class="menu_txt" href="firstpage.html">Главная страница</a></p>
+            <p><a  class="menu_txt" href="information.html">Информация</a></p>
+            </div>
+        </div>
+
     </div>
+
     <table>
         <tr>
             <td><div class = "img">
