@@ -14,8 +14,8 @@
     background-color: white;
     cursor: pointer;
 }
-.special_menu:not(.slide){
-    transform: translateX(-60px);
+.special_menu{
+    transform: translateX(-30px);
     cursor: pointer;
 }
 

@@ -13,12 +13,24 @@
 <body>
     
     <script src = "/scripts/menu_button.js"></script>
-    
+
+    <style>
+        #a{
+            text-decoration: none;
+            color: black
+        }
+    </style>
+
     <div class="start">
-        <span class="my_receipt"><p>Мои рецепты</p></span>
-        <button class="slide"><div class = "special_menu">
-            <img class="menu_img" id="img_1" src="/images/icon%20menu.png" onclick="cgh(this.id)" alt="Нажмите для открытия меню">
-        </div></button>
+        <span class="my_receipt"><p><a id="a" href="firstpage.html">Мои рецепты</a></p></span>
+        <div class = "special_menu"><button class="slide">
+            <img class="menu_img" id="img_1" src="/images/icon%20menu.png" onclick="cgh(this.id)"></button>
+            <div id="nav-list" class="nav-list" style="min-height: 0">
+                <p><a class="menu_txt" href="firstpage.html">Аккаунт</a></p>
+                <p><a  class="menu_txt" href="information.html">Информация</a></p>
+            </div>
+        </div>
+
     </div>
 
     <div class ="text">
