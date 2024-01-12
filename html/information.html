@@ -8,14 +8,28 @@
 
     <style>
         body{
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         div{
-            align-items: center;
-            position: absolute;
-            top: 40%;
-            right: 45%;
-
+            border-radius: 30px;
+            padding: 30px;
+            -webkit-box-shadow: 0 0 180px -13px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0 0 180px -13px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 180px -13px rgba(0, 0, 0, 0.4)
+        }
+        @media screen and (max-device-width: 500px) {
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                width: 500px;
+                font-size: 40px;
+            }
         }
         a{
             text-decoration: none;
@@ -25,7 +39,7 @@
     <div>
         <p>Здесь пока ничего нет</p>
 
-        <p><a href="firstpage.html">Вернуться на главную</a></p>
+        <p><a href="index.html">Вернуться на главную</a></p>
     </div>
 </body>
 </html>

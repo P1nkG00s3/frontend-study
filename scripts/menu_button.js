@@ -6,11 +6,14 @@ function cgh(id){
         elem.style.display = 'block';
         elem.style.animation = 'move_on 0.15s linear';
         elem.style.opacity = '1';
+        elem.style.pointerEvents = 'auto';
     }
     else{
         button.src='/images/icon%20menu.png';
         let elem = document.getElementById("nav-list");
         elem.style.animation = 'move_back 0.15s linear';
         elem.style.opacity = '0';
+        elem.style.cursor = 'auto';
+        elem.style.pointerEvents = 'none';
     }
 }

@@ -1,8 +1,13 @@
+html{
+    font-family: Arial, serif;
+}
+
 .img{
-    position: relative;
+    /*position: relative;*/
     display: inline;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .imgchild{
@@ -19,9 +24,9 @@
     letter-spacing: 2px;
     font-weight: bolder;
     font-family: Arial, serif;
-    top:-100px;
-    right:37%;
-    position: absolute;
+    /*top:-100px;*/
+    /*right:37%;*/
+    /*position: absolute;*/
     color: black;
     font-size: 24px;
     opacity: 0;
@@ -39,12 +44,119 @@
     opacity: 1;
 }
 
+body{
+    height: 100%;transition: all .5s;
+}
+
+body > .window-up{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-up{
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 70px;
+    background-color: #f3f3f3;
+    color: #020202;
+    position: fixed;
+    opacity: .2;
+    transition: all 1s;
+}
+
+.window-up:hover{
+    opacity: 1;
+}
+
+body{
+    font-size: 20px;
+    overflow-block: hidden;
+}
+
+@media screen and (min-device-width: 1600px) {
+    .window-up{
+        position: fixed;
+        right: 50px;
+        bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-device-width: 1500px) {
+    body{
+        font-size: 20px;
+    }
+    .window-up{
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+        border-radius: 90px;
+        background-color: #f3f3f3;
+        color: #020202;
+        position: fixed;
+        opacity: 1;
+    }
+    .receipt{
+        opacity: 1;
+        text-decoration: none;
+    }
+    table{
+        flex-wrap: wrap;
+    }
+}
 
 
+.modal-button{
+    border: 0px;
+    font-size: 20px;
+    padding: 0px;
+    background-color: rgba(200, 200, 200, 0);
+    cursor: pointer;
+    margin-right: 10px;
+}
 
+.modal-close{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    background-repeat: no-repeat;
+}
+.modal-open{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 15%;
+    left: 42%;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 180px -13px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 180px -13px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 180px -13px rgba(0, 0, 0, 0.4);
+    background-color: rgba(253, 253, 253, 1);
+    opacity: 1;
+    visibility: visible;
+}
+.modal-text{
+    position: absolute;
+    align-self: center;
+}
+.close{
+    position: absolute;
+    z-index: 0;
+    margin-bottom: 20px;
+}
 
+.blur {
+    backdrop-filter: blur(2px);
+}
 
-
-
-
-
+.blur > .modal-open {
+    filter: blur(0);
+}
